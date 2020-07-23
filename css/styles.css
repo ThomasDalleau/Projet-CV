@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+/*ici choisir le fond de la couleur du body presentattion*/
+background-color: #4a80beea;
+width: auto;
+height: auto;
+}
+    header {
+        display: flex;
+        justify-content: center;
+        background-color:white;
+        position: fixed;
+        width:100%;
+        border: solid #5bace3 10px;
+        border-radius: 15px;
+
+    }
+        header h1 {
+            text-align: center;
+            align-items: center;
+            
+        }
+            nav ul {
+            display: flex;
+            }
+                nav ul li {
+                    list-style: none;
+                    margin:5em ;
+                }
+                    nav ul li a {
+                        border: solid #5bace3 3px;
+                        padding: 9px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                        nav ul li a:hover{
+                            background-color: #5bace3;
+                            border: solid #ff9d00 3px;
+                        }
+    .contenu_principal{
+        padding-top: 15em;
+        display: flex;
+        flex-wrap: wrap;justify-content: space-around;
+    }
+        .photo  {
+            background-image: url(/img/ThomasD.jpg);
+            background-repeat: no-repeat ;
+            border-radius: 50%;
+            width: 16vw;
+            height: 32vh;
+            background-size: 100%;
+            margin-bottom: 5em;
+            margin-left: 20em;
+        }
+        .info {
+            background-color:white;
+            border: solid #5bace3 5px;
+            padding: 1em;
+            border-radius: 15px;
+            text-align: center;
+            width: 30%;
+            font-size: 2em;
+            margin-bottom: 2em;
+            margin-right: 5em;
+        }
+            .info ul li {
+                list-style: none;
+
+            }
+        .experience {
+            background-color:white;
+            border: solid #5bace3 5px;
+            padding: 1em;
+            border-radius: 15px;
+            text-align: center;
+            width: 70%;
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
+            .experience h1 {
+                font-size: 1.5em;
+                padding-bottom: 0.5em;
+                text-decoration: underline;
+            }
+                .experience ul li {
+                    list-style: none;
+                }
+            .formation {
+                background-color:white;
+                border: solid #5bace3 5px;
+                padding: 1em;
+                border-radius: 15px;
+                text-align: center;
+                width: 70%;
+                font-size: 2em;  
+                margin-bottom: 2em;
+            }
+                .formation h1 {
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    text-decoration: underline;
+                }
+                    .formation ul li {
+                        list-style: none;
+                    }
+            .objectif {
+                background-color:white;
+                border: solid #5bace3 5px;
+                padding: 1em;
+                border-radius: 15px;
+                text-align: center;
+                width: 70%;
+                font-size: 2em;
+                margin-bottom: 2em;
+            }
+                .objectif h1 {
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    text-decoration: underline;
+                }
+                    .objectif ul li {
+                        list-style: none;
+                    }
+            .langue {
+                background-color:white;
+                border: solid #5bace3 5px;
+                padding: 1em;
+                border-radius: 15px;
+                text-align: center;
+                width: 70%;
+                font-size: 2em;
+                margin-bottom: 2em;
+            }
+                .langue h1 {
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    text-decoration: underline;
+                }
+                    .langue ul li {
+                        list-style: none;
+                    }
+            .competence_informatique {
+                background-color:white;
+                border: solid #5bace3 5px;
+                padding: 1em;
+                border-radius: 15px;
+                text-align: center;
+                width: 70%;
+                font-size: 2em;
+                margin-bottom: 2em;
+            }
+            .competence_informatique h1 {
+                font-size: 1.5em;
+                padding-bottom: 0.5em;
+                text-decoration: underline;
+            }
+                .competence_informatique ul li {
+                    list-style: none;
+                } 
+                footer {
+                   padding: 4em;
+                    background-color:white;
+                    width:100%;
+                    border: solid #5bace3 10px;
+                    border-radius: 15px;
+                    
+                }
+                .title_footer{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .contact{
+                    font-size: 1.5em;
+                }
+                .contact h2 {
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    text-decoration: underline;
+
+                }
+                .commentaire{
+                    font-size: 1.5em;
+                }
+                .commentaire h2 {
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    text-decoration: underline;
+
+                }
+                footer p {
+                    text-align: center;
+                }
