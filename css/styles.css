@@ -40,7 +40,8 @@ height: auto;
                     }
                         nav ul li a:hover{
                             background-color: #5bace3;
-                            border: solid #ff9d00 3px;
+                            border: solid #343faa 3px;
+                            box-shadow: rgb(190, 214, 216) 0px 0px 20px 3px
                         }
     .contenu_principal{
         padding-top: 15em;
@@ -51,11 +52,13 @@ height: auto;
             background-image: url(/img/ThomasD.jpg);
             background-repeat: no-repeat ;
             border-radius: 50%;
+            border: solid #5bace3 5px;
             width: 16vw;
             height: 32vh;
             background-size: 100%;
             margin-bottom: 5em;
             margin-left: 20em;
+            box-shadow: black 10px 10px 10px;
         }
         .info {
             background-color:white;
@@ -67,6 +70,7 @@ height: auto;
             font-size: 2em;
             margin-bottom: 2em;
             margin-right: 5em;
+            box-shadow: black 10px 10px 10px;
         }
             .info ul li {
                 list-style: none;
@@ -81,6 +85,7 @@ height: auto;
             width: 70%;
             font-size: 2em;
             margin-bottom: 2em;
+            box-shadow: black 10px 10px 10px;
         }
             .experience h1 {
                 font-size: 1.5em;
@@ -99,6 +104,7 @@ height: auto;
                 width: 70%;
                 font-size: 2em;  
                 margin-bottom: 2em;
+                box-shadow: black 10px 10px 10px;
             }
                 .formation h1 {
                     font-size: 1.5em;
@@ -117,6 +123,7 @@ height: auto;
                 width: 70%;
                 font-size: 2em;
                 margin-bottom: 2em;
+                box-shadow: black 10px 10px 10px;
             }
                 .objectif h1 {
                     font-size: 1.5em;
@@ -135,6 +142,7 @@ height: auto;
                 width: 70%;
                 font-size: 2em;
                 margin-bottom: 2em;
+                box-shadow: black 10px 10px 10px;
             }
                 .langue h1 {
                     font-size: 1.5em;
@@ -153,6 +161,7 @@ height: auto;
                 width: 70%;
                 font-size: 2em;
                 margin-bottom: 2em;
+                box-shadow: black 10px 10px 10px;
             }
             .competence_informatique h1 {
                 font-size: 1.5em;
@@ -195,3 +204,82 @@ height: auto;
                 footer p {
                     text-align: center;
                 }
+                .wrap {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                  }
+                  
+                  .button {
+                    text-transform: uppercase;
+                    letter-spacing: 1.3px;
+                    font-weight: 700;
+                    color: #313133;
+                    background: #4FD1C5;
+                    background: linear-gradient(90deg, #0288d1 0%, #0288d1 100%);
+                    border: none;
+                    border-radius: 1000px;
+                    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+                    transition: all 0.3s ease-in-out 0s;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                    padding: 10px;
+                    }
+                    .wrap :nth-child(2){
+                        background: linear-gradient(90deg, #3f51b5 0%, #3f51b5 100%);
+                    }
+                  
+                  button::before {
+                    content: '';
+                    border-radius: 1000px;
+                    min-width: calc(100px + 12px);
+                    min-height: calc(60px + 12px);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: all .3s ease-in-out 0s;
+                  }
+                  
+                  .button:hover, .button:focus {
+                    color: #313133;
+                    transform: translateY(-6px);
+                  }
+                  
+                  button:hover::before, button:focus::before {
+                    opacity: 1;
+                  }
+                  
+                  /* button::after {
+                    content: '';
+                    width: 30px; height: 30px;
+                    border-radius: 100%;
+                    border: 6px solid #0288d1;
+                    position: absolute;
+                    z-index: -1;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    animation: ring 1.5s infinite;
+                  } */
+                  
+                  button:hover::after, button:focus::after {
+                    animation: none;
+                    display: none;
+                  }
+                  
+                  @keyframes ring {
+                    0% {
+                      width: 30px;
+                      height: 30px;
+                      opacity: 1;
+                    }
+                    100% {
+                      width: 300px;
+                      height: 300px;
+                      opacity: 0;
+                    }
+                  }
