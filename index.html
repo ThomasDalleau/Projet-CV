@@ -100,6 +100,24 @@
                 <div class="title_footer">
                     <div class="commentaire">
                         <h2>Commentaire:</h2>
+                        <div id="text_script">
+                        </div>
+                        <input id = "form"type="text" id="commentaire" name="Commentaire">
+                    <script>
+                        var myText ="Ecrivé un commentaire....";
+                        var myArray = myText.split("");
+                        var timeLooper;
+                        function loop(){
+                            if(myArray.length > 0){
+                                document.getElementById("text_script").innerHTML += myArray.shift();
+                            }else{
+                                clearTimeout(timeLooper);
+                            }
+                            timeLooper = setTimeout('loop()', 70);
+                           
+                        }
+                            loop();
+                    </script>
                     </div>
                     <div class="contact">
                         <h2>Contact:</h2>

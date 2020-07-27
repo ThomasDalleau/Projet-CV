@@ -17,7 +17,7 @@ height: auto;
         width:100%;
         border: solid #5bace3 10px;
         border-radius: 15px;
-
+        box-shadow:black 0px 0px 10px 0px ;
     }
         header h1 {
             text-align: center;
@@ -43,7 +43,7 @@ height: auto;
                         nav ul li a:hover{
                             background-color: #5bace3;
                             border: solid #343faa 3px;
-                            box-shadow: rgb(190, 214, 216) 0px 0px 20px 3px
+                            box-shadow: rgb(128, 216, 224) 0px 0px 20px 3px
                         }
     .contenu_principal{
         padding-top: 15em;
@@ -99,78 +99,78 @@ height: auto;
                 .experience ul li {
                     list-style: none;
                 }
-            .formation {
-                background-color:white;
-                border: solid #5bace3 5px;
-                padding: 1em;
-                border-radius: 15px;
-                text-align: center;
-                width: 70%;
-                font-size: 2em;  
-                margin-bottom: 2em;
-                box-shadow: black 10px 10px 10px;
-                font-family: "titiullium";
+        .formation {
+            background-color:white;
+            border: solid #5bace3 5px;
+            padding: 1em;
+            border-radius: 15px;
+            text-align: center;
+            width: 70%;
+            font-size: 2em;  
+            margin-bottom: 2em;
+            box-shadow: black 10px 10px 10px;
+            font-family: "titiullium";
+        }
+            .formation h1 {
+                font-size: 1.5em;
+                padding-bottom: 0.5em;
+                text-decoration: underline;
             }
-                .formation h1 {
-                    font-size: 1.5em;
-                    padding-bottom: 0.5em;
-                    text-decoration: underline;
+                .formation ul li {
+                    list-style: none;
                 }
-                    .formation ul li {
-                        list-style: none;
-                    }
-            .objectif {
-                background-color:white;
-                border: solid #5bace3 5px;
-                padding: 1em;
-                border-radius: 15px;
-                text-align: center;
-                width: 70%;
-                font-size: 2em;
-                margin-bottom: 2em;
-                box-shadow: black 10px 10px 10px;
-                font-family: "titiullium";
+        .objectif {
+            background-color:white;
+            border: solid #5bace3 5px;
+            padding: 1em;
+            border-radius: 15px;
+            text-align: center;
+            width: 70%;
+            font-size: 2em;
+            margin-bottom: 2em;
+            box-shadow: black 10px 10px 10px;
+            font-family: "titiullium";
+        }
+            .objectif h1 {
+                font-size: 1.5em;
+                padding-bottom: 0.5em;
+                text-decoration: underline;
             }
-                .objectif h1 {
-                    font-size: 1.5em;
-                    padding-bottom: 0.5em;
-                    text-decoration: underline;
+                .objectif ul li {
+                    list-style: none;
                 }
-                    .objectif ul li {
-                        list-style: none;
-                    }
-            .langue {
-                background-color:white;
-                border: solid #5bace3 5px;
-                padding: 1em;
-                border-radius: 15px;
-                text-align: center;
-                width: 70%;
-                font-size: 2em;
-                margin-bottom: 2em;
-                box-shadow: black 10px 10px 10px;
-                font-family: "titiullium";
+        .langue {
+            background-color:white;
+            border: solid #5bace3 5px;
+            padding: 1em;
+            border-radius: 15px;
+            text-align: center;
+            width: 70%;
+            font-size: 2em;
+            margin-bottom: 2em;
+            box-shadow: black 10px 10px 10px;
+            font-family: "titiullium";
+        }
+            .langue h1 {
+                font-size: 1.5em;
+                padding-bottom: 0.5em;
+                text-decoration: underline;
             }
-                .langue h1 {
-                    font-size: 1.5em;
-                    padding-bottom: 0.5em;
-                    text-decoration: underline;
+                .langue ul li {
+                    list-style: none;
                 }
-                    .langue ul li {
-                        list-style: none;
-                    }
-            .competence_informatique {
-                background-color:white;
-                border: solid #5bace3 5px;
-                padding: 1em;
-                border-radius: 15px;
-                text-align: center;
-                width: 70%;
-                font-size: 2em;
-                margin-bottom: 2em;
-                box-shadow: black 10px 10px 10px;
-                font-family: "titiullium";
-            }
+        .competence_informatique {
+            background-color:white;
+            border: solid #5bace3 5px;
+            padding: 1em;
+            border-radius: 15px;
+            text-align: center;
+            width: 70%;
+            font-size: 2em;
+            margin-bottom: 2em;
+            box-shadow: black 10px 10px 10px;
+            font-family: "titiullium";
+        }
             .competence_informatique h1 {
                 font-size: 1.5em;
                 padding-bottom: 0.5em;
@@ -179,18 +179,18 @@ height: auto;
                 .competence_informatique ul li {
                     list-style: none;
                 } 
-                footer {
-                   padding: 4em;
-                    background-color:white;
-                    width:100%;
-                    border: solid #5bace3 10px;
-                    border-radius: 15px;
-                    
-                }
-                .title_footer{
-                    display: flex;
-                    justify-content: space-around;
-                }
+        footer {
+            padding: 4em;
+            background-color:white;
+             width:100%;
+            border: solid #5bace3 10px;
+            border-radius: 15px;
+            font-family: "titiullium";   
+        }
+            .title_footer{
+                display: flex;
+                justify-content: space-around;
+             }
                 .contact{
                     font-size: 1.5em;
                 }
@@ -207,11 +207,16 @@ height: auto;
                     font-size: 1.5em;
                     padding-bottom: 0.5em;
                     text-decoration: underline;
-
+                    
                 }
-                footer {
-                    font-family: "titiullium";
+                #text_script {
+                    border: solid 3px #5bace3;
+                    padding: 1em;
                 }
+                    #form {
+                        padding: 5em;
+                        margin-top: 1em;
+                    }
                 footer p {
                     text-align: center;
                 }
@@ -300,3 +305,4 @@ height: auto;
                     font-weight: 100;
                     font-style: normal;
                 }
+                
