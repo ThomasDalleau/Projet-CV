@@ -18,12 +18,8 @@ height: auto;
         border: solid #5bace3 10px;
         border-radius: 15px;
         box-shadow:black 0px 0px 10px 0px ;
+        font-size: 0.8em;
     }
-        header h1 {
-            text-align: center;
-            align-items: center;
-            
-        }
             nav ul {
             display: flex;
             }
@@ -305,10 +301,11 @@ height: auto;
                     font-weight: 100;
                     font-style: normal;
                 }
-                @media (min-width: 1200px){
+                @media only screen and (min-width:993px) and (max-width: 1200px){
                     header {
                         flex-wrap: wrap;
-                        font-size: 0.7em;
+                        font-size: 0.5em;
+
                     }
                     .contenu_principal{
                         padding-top: 25em;
@@ -316,11 +313,81 @@ height: auto;
                     .photo {
                         width: 16vw;
                         height: 22vh;  
+                        background-size: 100%;
                     }
                     
                     .info{
                         font-size: 1.4em;  
+                        height: auto;
+                        width: auto;
                     }
                     
                 }
-                
+                @media only screen and (min-width:768px) and (max-width: 992px){
+                    header {
+                        flex-wrap: wrap;
+                        font-size: 0.5em;
+                    }
+                    .contenu_principal{
+                        padding-top: 25em;
+                    }
+                        .photo {
+                            display: none;
+                        }
+                        .info {
+                            font-size: 1.4em; 
+                            height: auto;
+                            width: auto;
+                            margin: 1em;
+                        }
+                }
+                @media only screen and (min-width:576px) and (max-width: 767.98px){
+                    body {
+                        font-size: 0.5em;
+                    }
+                    header {
+                        flex-wrap: wrap;
+                        font-size: 0.5em;
+                        position: unset;
+                    } 
+                    nav {
+                        display: none;
+                    }
+                    .photo {
+                        display: none;
+                    }
+                    .info {
+                        width: 70%;
+                        margin-left: 4em;
+                    }
+                }
+                @media only screen and (min-width: 375px) and (max-width:575px){
+                    body {
+                        font-size: 0.5em;
+                    }
+                    header {
+                        flex-wrap: wrap;
+                        font-size: 0.5em;
+                        position: unset;
+                    } 
+                    nav {
+                        display: none;
+                    }
+                    .photo {
+                        display: none;
+                    }
+                    .info {
+                        width: 70%;
+                        margin-left: 4em;
+                    }
+                    .commentaire {
+                        display: none;
+                    }
+                    .wrap {
+                        width: 10em;
+                        height: 10em;
+                    }
+                    .contact p {
+                        margin-top: 20em;
+                    }
+                }
