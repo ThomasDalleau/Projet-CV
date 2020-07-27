@@ -305,4 +305,22 @@ height: auto;
                     font-weight: 100;
                     font-style: normal;
                 }
+                @media (min-width: 1200px){
+                    header {
+                        flex-wrap: wrap;
+                        font-size: 0.7em;
+                    }
+                    .contenu_principal{
+                        padding-top: 25em;
+                    }
+                    .photo {
+                        width: 16vw;
+                        height: 22vh;  
+                    }
+                    
+                    .info{
+                        font-size: 1.4em;  
+                    }
+                    
+                }
                 
