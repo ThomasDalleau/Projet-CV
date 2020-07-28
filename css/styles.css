@@ -9,6 +9,7 @@ background-color: #4a80beea;
 width: auto;
 height: auto;
 }
+    /* ici c'est le  header */
     header {
         display: flex;
         justify-content: center;
@@ -20,6 +21,7 @@ height: auto;
         box-shadow:black 0px 0px 10px 0px ;
         font-size: 0.8em;
     }
+            /* ici c'est la barre de navigation */
             nav ul {
             display: flex;
             }
@@ -41,11 +43,13 @@ height: auto;
                             border: solid #343faa 3px;
                             box-shadow: rgb(128, 216, 224) 0px 0px 20px 3px
                         }
+    /* ici c'est le contenu principal  */
     .contenu_principal{
         padding-top: 15em;
         display: flex;
         flex-wrap: wrap;justify-content: space-around;
     }
+        /* photo */
         .photo  {
             background-image: url(/img/ThomasD.jpg);
             background-repeat: no-repeat ;
@@ -58,6 +62,7 @@ height: auto;
             margin-left: 20em;
             box-shadow: black 10px 10px 10px;
         }
+        /* information personnel */
         .info {
             background-color:white;
             border: solid #5bace3 5px;
@@ -75,6 +80,7 @@ height: auto;
                 list-style: none;
 
             }
+        /* expérience */
         .experience {
             background-color:white;
             border: solid #5bace3 5px;
@@ -95,6 +101,7 @@ height: auto;
                 .experience ul li {
                     list-style: none;
                 }
+        /* Mes diplome et mes formation */
         .formation {
             background-color:white;
             border: solid #5bace3 5px;
@@ -115,6 +122,7 @@ height: auto;
                 .formation ul li {
                     list-style: none;
                 }
+        /* Mes objectif  */
         .objectif {
             background-color:white;
             border: solid #5bace3 5px;
@@ -135,6 +143,7 @@ height: auto;
                 .objectif ul li {
                     list-style: none;
                 }
+        /* Language */
         .langue {
             background-color:white;
             border: solid #5bace3 5px;
@@ -155,6 +164,7 @@ height: auto;
                 .langue ul li {
                     list-style: none;
                 }
+        /* mes compétence informatique */
         .competence_informatique {
             background-color:white;
             border: solid #5bace3 5px;
@@ -175,6 +185,7 @@ height: auto;
                 .competence_informatique ul li {
                     list-style: none;
                 } 
+        /* footer */
         footer {
             padding: 4em;
             background-color:white;
@@ -187,6 +198,7 @@ height: auto;
                 display: flex;
                 justify-content: space-around;
              }
+                /* contact et réseseau sociaux */
                 .contact{
                     font-size: 1.5em;
                 }
@@ -196,6 +208,7 @@ height: auto;
                     text-decoration: underline;
 
                 }
+                /* Commentaire */
                 .commentaire{
                     font-size: 1.5em;
                 }
@@ -229,12 +242,14 @@ height: auto;
                       opacity: 0;
                     }
                   }
+                  /* font face */
                   @font-face {
                     font-family: "titiullium";
                     src:url("../font/TitilliumWeb-Regular.ttf");
                     font-weight: 100;
                     font-style: normal;
                 }
+                /* responsive grand laptop */
                 @media only screen and (min-width:993px) and (max-width: 1200px){
                     header {
                         flex-wrap: wrap;
@@ -257,6 +272,7 @@ height: auto;
                     }
                     
                 }
+                /* responsive laptop */
                 @media only screen and (min-width:768px) and (max-width: 992px){
                     header {
                         flex-wrap: wrap;
@@ -275,6 +291,7 @@ height: auto;
                             margin: 1em;
                         }
                 }
+                /* responsive tablette */
                 @media only screen and (min-width:576px) and (max-width: 767.98px){
                     body {
                         font-size: 0.5em;
@@ -295,6 +312,7 @@ height: auto;
                         margin-left: 4em;
                     }
                 }
+                /* responsive telephone */
                 @media only screen and (min-width: 375px) and (max-width:575px){
                     body {
                         font-size: 0.5em;
