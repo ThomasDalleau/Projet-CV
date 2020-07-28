@@ -31,11 +31,11 @@
                 <!------ ici c'est la barre de navigation ------>
                 <nav>
                     <ul>
-                        <li><a href="">Experience</a></li>
-                        <li><a href="">Formation</a></li>
-                        <li><a href="">Objectif</a></li>
-                        <li><a href="">Langues</a></li>
-                        <li><a href="">Compétence informatique</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#formation">Formation</a></li>
+                        <li><a href="#objectif">Objectif</a></li>
+                        <li><a href="#langue">Langues</a></li>
+                        <li><a href="#competence_informatique">Compétence informatique</a></li>
                     </ul>
                 </nav>
             </header>
@@ -55,7 +55,7 @@
                     </ul>
                 </div>
                 <!------ expérience  ------>
-                <div class="experience">
+                <div id="experience">
                     <h1>Experience:</h1>
                     <ul>
                         <li>-Premier stage de découverte en troisième dans l'informatique chezEuro-PC Cyberomania à Verdun</li>
@@ -66,7 +66,7 @@
                     </ul>
                 </div>
                 <!------ Mes diplome et mes formation  ------>
-                <div class="formation">
+                <div id="formation">
                     <h1>Formation:</h1>
                     <ul>
                         <li>-Bac Pro Technicien de maintenance des système énergétique et climatique au Lycée Eugène Freyssinet à Verdun</li>
@@ -77,14 +77,14 @@
                     </ul>
                 </div>
                 <!------ Mes objectif  ------>
-                <div class="objectif">
+                <div id="objectif">
                     <h1>Objectif:</h1>
                     <ul>
                         <li>Obtenir mon diplôme et me lancée en temp que freelance dans le developpement Web </li>
                     </ul>
                 </div>
                 <!------ Language ------>
-                <div class="langue">
+                <div id="langue">
                     <h1>Langues:</h1>
                     <ul>
                         <li>-Français</li>
@@ -93,7 +93,7 @@
                     </ul>
                 </div>
                 <!------ mes compétence informatique ------>
-                <div class="competence_informatique">
+                <div id="competence_informatique">
                     <h1>Compétence informatique:</h1>
                     <ul>
                         <li>-Excel,Word </li>
@@ -116,21 +116,22 @@
                         </div>
                         <input id = "form"type="text" id="commentaire" name="Commentaire">
                         <!------ mon code java script ------>
-                    <script>
-                        var myText ="Ecrivé un commentaire....";
-                        var myArray = myText.split("");
-                        var timeLooper;
-                        function loop(){
-                            if(myArray.length > 0){
-                                document.getElementById("text_script").innerHTML += myArray.shift();
-                            }else{
-                                clearTimeout(timeLooper);
+                        <script>
+                            var myText ="Ecrivé un commentaire....";
+                            var myArray = myText.split("");
+                            var timeLooper;
+                            function loop(){
+                                if(myArray.length > 0){
+                                    document.getElementById("text_script").innerHTML += myArray.shift();
+                                }else{
+                                    clearTimeout(timeLooper);
+                                }
+                                timeLooper = setTimeout('loop()', 120);
+                            
                             }
-                            timeLooper = setTimeout('loop()', 70);
-                           
-                        }
-                            loop();
-                    </script>
+                                loop();
+                                
+                        </script>
                     </div>
                     <!------ contact et réseseau sociaux ------>
                     <div class="contact">
