@@ -21,7 +21,9 @@
                 <link rel="shortcut icon" type="image.jpg" href="img/favicon.png">
             <!--pour tout le monde-->
                 <link rel="stylesheet" type="text/css" href="css/styles.css">
-            <title>CV | Thomas Dalleau</title>
+                <!-- link font title -->
+                <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">            
+                <title>CV | Thomas Dalleau</title>
         </head>
         <!------ body ------>
         <body>
@@ -44,6 +46,15 @@
                 <div class="photo">
                 </div>
                 <!------ information personnel------>
+                <div><a id="cRetour" class="cInvisible" href="#top"></a></div>
+
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  window.onscroll = function(ev) {
+                    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+                  };
+                });
+                </script>
                 <div class="info">
                     <h1></h1>
                     <ul>
@@ -58,7 +69,7 @@
                 <div id="experience">
                     <h1>Experience:</h1>
                     <ul>
-                        <li>-Premier stage de découverte en troisième dans l'informatique chezEuro-PC Cyberomania à Verdun</li>
+                        <li>-Premier stage de découverte en troisième dans l'informatique chez Euro-PC Cyberomania à Verdun</li>
                         <li>-Un stage dans le chauffage chez Benoit-Julien à Vieville-sous-lès-côtes </li>
                         <li>-Cinq stage dans le chauffage chez Massés à Champlon</li>
                         <li>-Contact de travail déterminée dans la Polyculture (saisonnier) à Saulx-lès-Champlon</li>
