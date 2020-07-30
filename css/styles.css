@@ -21,9 +21,14 @@ height: auto;
         box-shadow:black 0px 0px 10px 0px ;
         font-size: 0.8em;
     }
+    header img {
+        height: auto;
+        width: auto;
+    }
             /* ici c'est la barre de navigation */
             nav ul {
             display: flex;
+            flex-wrap: wrap;
             }
                 nav ul li {
                     list-style: none;
@@ -101,7 +106,7 @@ height: auto;
             padding: 1em;
             border-radius: 15px;
             text-align: center;
-            width: 30%;
+            width: auto;
             font-size: 2em;
             margin-bottom: 2em;
             margin-right: 5em;
@@ -110,10 +115,6 @@ height: auto;
         }
             .info ul li {
                 list-style: none;
-
-            }
-            .infi h1 {
-                font-family: 'Bungee', cursive;
             }
         /* expérience */
         #experience {
@@ -322,6 +323,9 @@ height: auto;
                     }
                     .contenu_principal{
                         padding-top: 25em;
+                    }
+                    nav {
+                        display: none;
                     }
                         .photo {
                             display: none;
